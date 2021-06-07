@@ -1,0 +1,15 @@
+{
+  "name": "vendor_name/php-prueba",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Jesus humberto Moreno Rojas",
+      "email": "elcdbetorojas@gmail.com"
+    }
+  ],
+  "require": {
+    "illuminate/database": "*"
+  }
+}
