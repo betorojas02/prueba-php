@@ -17,6 +17,7 @@ class ComposerStaticInit5db718047532a56e71918334e0f86a7f
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '6195ccae414b7a82ab47247beb894d66' => __DIR__ . '/..' . '/nezamy/route/system/function.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -26,6 +27,8 @@ class ComposerStaticInit5db718047532a56e71918334e0f86a7f
         ),
         'S' => 
         array (
+            'System\\Support\\' => 15,
+            'System\\' => 7,
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Php73\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -42,6 +45,7 @@ class ComposerStaticInit5db718047532a56e71918334e0f86a7f
         array (
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Container\\' => 14,
+            'Phroute\\Phroute\\' => 16,
         ),
         'I' => 
         array (
@@ -68,6 +72,14 @@ class ComposerStaticInit5db718047532a56e71918334e0f86a7f
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'System\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nezamy/support',
+        ),
+        'System\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nezamy/route/system',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
@@ -120,6 +132,10 @@ class ComposerStaticInit5db718047532a56e71918334e0f86a7f
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Phroute\\Phroute\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phroute/phroute/src/Phroute',
         ),
         'Illuminate\\Support\\' => 
         array (

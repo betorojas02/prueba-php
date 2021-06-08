@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/php-prueba.iml" filepath="$PROJECT_DIR$/.idea/php-prueba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zinobe-test-master/zinobe-test-master/.idea/zinobe-test-master.iml" filepath="$PROJECT_DIR$/../zinobe-test-master/zinobe-test-master/.idea/zinobe-test-master.iml" />
     </modules>
   </component>
 </project>
