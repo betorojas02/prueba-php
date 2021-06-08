@@ -25,6 +25,10 @@ class ComposerStaticInit5db718047532a56e71918334e0f86a7f
         array (
             'voku\\' => 5,
         ),
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
         'S' => 
         array (
             'System\\Support\\' => 15,
@@ -72,6 +76,10 @@ class ComposerStaticInit5db718047532a56e71918334e0f86a7f
         'voku\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
+        ),
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
         ),
         'System\\Support\\' => 
         array (
@@ -167,6 +175,16 @@ class ComposerStaticInit5db718047532a56e71918334e0f86a7f
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
@@ -181,6 +199,7 @@ class ComposerStaticInit5db718047532a56e71918334e0f86a7f
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit5db718047532a56e71918334e0f86a7f::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit5db718047532a56e71918334e0f86a7f::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit5db718047532a56e71918334e0f86a7f::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit5db718047532a56e71918334e0f86a7f::$classMap;
 
         }, null, ClassLoader::class);
