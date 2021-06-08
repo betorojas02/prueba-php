@@ -12,32 +12,13 @@ class UserRepository implements UserRepositoryInterface
     /**
      * PostRepository constructor.
      *
-     * @param User $post
+     * @param User $user
      */
-    function __construct()
-    {
-        //obtengo un array con los parámetros enviados a la función
-        $params = func_get_args();
-        //saco el número de parámetros que estoy recibiendo
-        $num_params = func_num_args();
-        //cada constructor de un número dado de parámtros tendrá un nombre de función
-        //atendiendo al siguiente modelo __construct1() __construct2()...
-        $funcion_constructor ='__construct'.$num_params;
-        //compruebo si hay un constructor con ese número de parámetros
-        if (method_exists($this,$funcion_constructor)) {
-            //si existía esa función, la invoco, reenviando los parámetros que recibí en el constructor original
-            call_user_func_array(array($this,$funcion_constructor),$params);
-        }
-    }
-    public function __construct1(User $user)
+
+    public function __construct(User $user)
     {
         $this->model = $user;
     }
-    public function __construct2()
-    {
-
-    }
-
     public function all()
     {
         return $this->model->all();
@@ -46,6 +27,18 @@ class UserRepository implements UserRepositoryInterface
     public function create(array $data)
     {
         return $this->model->create($data);
+    }
+    public function login($email, $clave)
+    {
+        return $this->model->login($email, $clave);
+    }
+    public function emailUser($email)
+    {
+         return $this->model->emailUser($email,);
+    }
+    public function nombreOemail($buscar)
+    {
+        return $this->model->nombreOemail($buscar);
     }
 
 }
