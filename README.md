@@ -2,7 +2,7 @@
 
 
 
-# Prueba Nexos (Libros) 
+# Prueba php 
 
 
 documentacion para ver todas las peticiones del api de de la palicacion como lo son registro, login y buscar usuarios.
